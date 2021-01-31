@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- LINKS  -->
+    <script src="https://kit.fontawesome.com/ca89a4b9f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="bg-info pt-2 pb-2">
+        <div class="container">
+            <h1 class="text-center text-white">Weather Dashboard</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <aside class="col-lg-3 bg-light">
+
+                <h5>Search for a city:</h5>
+
+                <!-- Input group -->
+                <div class="input-group">
+                    <input id="selectedCity" type="text" class="form-control" placeholder="Ex: Seattle"
+                        class="input-group-append">
+                    <button id="searchBtn" class="btn btn-info" type="button" id="button-addon2"><i
+                            class="fas fa-search-location"></i></button>
+                </div>
+
+                <!-- saved city list -->
+                <div class="card">
+                    <ul class="list-group list-group-flush list">
+                    </ul>
+                </div>
+            </aside>
+
+        <!-- weather output area -->
+            <div class="col-lg-9">
+                <div id="weatherOutput">
+                </div>
+            </div> 
+        </div>
+
+        <!--forecast area -->
+        <div class="mt-4 col-md-12">
+
+            <h5 id="forecastH5">5-Day Forecast:</h5>
+
+            <div id="forecast" class="row">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
