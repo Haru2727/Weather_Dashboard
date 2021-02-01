@@ -78,6 +78,7 @@ function getCurrentConditions(response) {
 
 }
 
+// cannot obtain the location of the UV Index value.  The example on OpenWeather API doesn't match with the information I get back.
 function getUVIndex() {
 
     var lat = (response.coord.lat);
@@ -87,7 +88,7 @@ function getUVIndex() {
         method: "GET",
     }).then(function (response){
         console.log(response.list)
-        $("#weatherOutput").append
+        // $("#weatherOutput").append
     })
 
 }
@@ -124,6 +125,7 @@ function getCurrentForecast() {
             let temp = (results[i].main.temp - 273.15) * 1.80 + 32;
             let tempF = Math.floor(temp);
 
+            // adding the information to a card to be presented when use searches for a city 
             const card = $("<div>").addClass("card col-md-2 ml-4 bg-primary text-white");
             const cardBody = $("<div>").addClass("card-body p-3 forecastBody")
             const cityDate = $("<h4>").addClass("card-title").text(date.toLocaleDateString('en-US'));
