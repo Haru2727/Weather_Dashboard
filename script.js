@@ -79,19 +79,19 @@ function getCurrentConditions(response) {
 }
 
 // cannot obtain the location of the UV Index value.  The example on OpenWeather API doesn't match with the information I get back.
-function getUVIndex() {
+// function getUVIndex() {
 
-    var lat = (response.coord.lat);
-    var lon = (response.coord.lon);
-    $.ajax({
-      url: "http://api.openweathermap.org/data/2.5/uvi/forecast?lat="+lat+"&lon="+lon+ +apiKey
-        method: "GET",
-    }).then(function (response){
-        console.log(response.list)
-        // $("#weatherOutput").append
-    })
+//     var lat = (response.coord.lat);
+//     var lon = (response.coord.lon);
+//     $.ajax({
+//       url: "http://api.openweathermap.org/data/2.5/uvi/forecast?lat="+lat+"&lon="+lon+ +apiKey
+//         method: "GET",
+//     }).then(function (response){
+//         console.log(response.list)
+//         // $("#weatherOutput").append
+//     })
 
-}
+// }
 
 function getCurrentForecast() {
 
